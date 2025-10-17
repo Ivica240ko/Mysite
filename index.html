@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksena Tec j.d.o.o.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #222;
+        }
+        header {
+            background-color: #cc0000;
+            color: white;
+            padding: 20px 40px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 40px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            padding: 80px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1, h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 22px;
+            max-width: 1000px;
+        }
+        .main-screen {
+            background: #f4f4f4;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1574192324001-ee41e18ed679?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .about-us, .services, .advantages, .process, .contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .text-left, .text-right {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .icon-block {
+            text-align: center;
+            flex: 1;
+            padding: 40px;
+        }
+
+        .icon-block i {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #cc0000;
+        }
+
+        .process-step {
+            text-align: center;
+            flex: 1;
+            padding: 40px;
+        }
+
+        .contact .text-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #cc0000;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                height: auto;
+            }
+            .text-left, .text-right {
+                width: 100%;
+                padding: 20px;
+            }
+            .about-us, .services, .advantages, .process, .contact {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#o-nama">O nama</a></li>
+            <li><a href="#usluge">Usluge</a></li>
+            <li><a href="#prednosti">Zašto mi?</a></li>
+            <li><a href="#proces">Naš Proces</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- 1. Glavni ekran -->
+<section class="main-screen" id="pocetna">
+    <h1>Ksena Tec j.d.o.o.</h1>
+    <p>Vaš tehnološki partner za pametna IT rješenja, tehničko savjetovanje i softversku podršku. Pomažemo malim poduzećima automatizirati poslovanje i unaprijediti digitalnu učinkovitost.</p>
+</section>
+
+<!-- 2. O nama -->
+<section class="about-us" id="o-nama">
+    <div class="text-left">
+        <h2>Tko smo mi?</h2>
+        <p>Ksena Tec j.d.o.o. je tim stručnjaka posvećenih stvaranju tehnoloških rješenja koja odgovaraju stvarnim potrebama malih poduzetnika. Naša misija je pojednostaviti tehnologiju i učiniti je dostupnom svima.</p>
+        <p>Imamo iskustvo u različitim industrijama i pružamo personalizirane usluge koje štede vrijeme, resurse i povećavaju konkurentnost naših klijenata.</p>
+    </div>
+    <div class="text-right">
+        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&q=80&w=800" alt="O nama" style="width:100%; border-radius:10px;">
+    </div>
+</section>
+
+<!-- 3. Usluge -->
+<section class="services" id="usluge">
+    <div class="icon-block">
+        <i class="fas fa-cogs"></i>
+        <h3>Tehničko Savjetovanje</h3>
+        <p>Pomažemo vam definirati prave tehnologije za vaše poslovanje. Od strategije do implementacije, vodimo vas svakim korakom.</p>
+    </div>
+    <div class="icon-block">
+        <i class="fas fa-headset"></i>
+        <h3>IT i Soft Podrška</h3>
+        <p>Brzo rješavamo tehničke poteškoće i nudimo stalnu podršku kako bi vaše poslovanje neprekidno funkcioniralo.</p>
+    </div>
+    <div class="icon-block">
+        <i class="fas fa-code"></i>
+        <h3>Razvoj Softvera</h3>
+        <p>Izrađujemo prilagođene aplikacije i alate koji automatiziraju zadatke i pomažu vam da budete korak ispred konkurencije.</p>
+    </div>
+</section>
+
+<!-- 4. Prednosti rada s nama -->
+<section class="advantages" id="prednosti">
+    <div class="icon-block">
+        <i class="fas fa-user-shield"></i>
+        <h3>Pouzdanost</h3>
+        <p>Uvijek smo dostupni i brinemo da sve funkcionira bez prekida. Naš tim odgovara brzo i precizno.</p>
+    </div>
+    <div class="icon-block">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Inovacija</h3>
+        <p>Primjenjujemo najnovije tehnologije i ideje kako bismo poboljšali vaše poslovanje i omogućili rast.</p>
+    </div>
+    <div class="icon-block">
+        <i class="fas fa-handshake"></i>
+        <h3>Partnerski Pristup</h3>
+        <p>Ne radimo samo za vas – radimo s vama. Svaka odluka je zajednička i temeljena na vašim ciljevima.</p>
+    </div>
+</section>
+
+<!-- 5. Naš proces -->
+<section class="process" id="proces">
+    <div class="process-step">
+        <i class="fas fa-search"></i>
+        <h3>Analiza Potreba</h3>
+        <p>Razumijemo vaše ciljeve i izazove kako bismo predložili najbolja rješenja.</p>
+    </div>
+    <div class="process-step">
+        <i class="fas fa-tools"></i>
+        <h3>Implementacija</h3>
+        <p>Postavljamo sustave, razvijamo softver i provodimo sve što je dogovoreno.</p>
+    </div>
+    <div class="process-step">
+        <i class="fas fa-thumbs-up"></i>
+        <h3>Podrška i Rast</h3>
+        <p>Nakon implementacije ostajemo uz vas i pomažemo vam da kontinuirano napredujete.</p>
+    </div>
+</section>
+
+<!-- 6. Kontakt -->
+<section class="contact" id="kontakt">
+    <div class="text-left"></div>
+    <div class="text-right">
+        <h2>Kontaktirajte nas</h2>
+        <p>Imate ideju, problem ili izazov? Pišite nam i pretvorimo ga u rješenje zajedno. Uvijek ste dobrodošli kontaktirati nas putem e-maila.</p>
+        <p><strong>Adresa:</strong> Zagrebačka ulica 72, 44322 Lipovljani</p>
+        <p><strong>Email:</strong> contact@ksenatec.org</p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Ksena Tec j.d.o.o. Sva prava pridržana.
+</footer>
+
+</body>
+</html>
